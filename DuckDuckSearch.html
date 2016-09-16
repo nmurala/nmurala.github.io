@@ -1,0 +1,22 @@
+<doctype! html>
+<html lang="en">
+  <head>
+    <title>DuckDuckGo Search</title>
+    <style>
+    </style>
+  </head>
+  <body>
+      <h1>Enter your query below:</h1><br>
+      <input id="q1" type="text" name="query"><br>
+      <button type="button" onclick="duckSearch()">Search</button>
+    <script>
+      function duckSearch() {
+        var input = document.getElementById("q1").value;
+        var output = input.replace(/ /g, '+');
+        output = "https://duckduckgo.com/?q=" + output + "&t=hn&ia=about";
+        //window.alert(output);
+        window.location=output;
+      }
+    </script>
+  </body>
+</html>
