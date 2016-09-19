@@ -1,0 +1,57 @@
+body{
+  background-color: #FFFFF0;
+}
+h1{
+  text-align: center;
+  text-shadow: 2px 2px #ff0000;
+  color: #00008B;
+}
+h3{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+  text-shadow: 2px 2px #B8860B;
+  color: #880000;
+}
+h6{
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: #B8860B;
+}
+h5{
+  font-family: 'Damion', cursive;
+  font-size: 50px;
+  text-shadow: 2px 2px #B8860B;
+  color: #8B008B;
+}
+h2{
+  text-align: center;
+  color: #8B008B;
+}
+h4{
+  text-align: center;
+  color: #663399;
+  size: 40px;
+  font-size: 20px;
+  }
+form{
+  text-align: center;
+  color: #663399;
+  font-size: 20px;
+  size: 5;
+}
+.message{
+  width: 200px;
+  height: 50px;
+}
+.text1{
+  width: 200px;
+}
+.makecard{
+  width: 100px;
+  height: 40px;
+  color: #FFD700;
+  background-color: #00008B;
+}
+.div2{
+  text-align: center;
+}

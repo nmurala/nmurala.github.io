@@ -3,92 +3,10 @@
   <head>
     <title>Birthday Card</title>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <style>
-    body{
-      background-color: #FFFFF0;
-    }
-    h1{
-      text-align: center;
-      color: #00008B;
-    }
-    hb{
-      font-family: 'Kaushan Script', cursive;
-      font-size: 40px;
-      color: #000088;
-    }
-    h2{
-      text-align: center;
-      color: #8B008B;
-    }
-    h4{
-      text-align: center;
-      color: #663399;
-      size: 40px;
-      font-size: 20px;
-      }
-    form{
-      text-align: center;
-      color: #663399;
-      font-size: 20px;
-      size: 5;
-    }
-    .message{
-      width: 200px;
-      height: 50px;
-    }
-    .text1{
-      width: 200px;
-    }
-    .makecard{
-      width: 100px;
-      height: 40px;
-      color: #FFD700;
-      background-color: #00008B;
-    }
-    .div2{
-      text-align: center;
-
-    }
-    </style>
-    <script>
-      function hideimg() {
-        document.getElementById("img1").style.display="none";
-        document.getElementById("img2").style.display="none";
-      }
-      function makeMyCard() {
-        var heading = "Happy Birthday Dearest ";
-
-        if (document.getElementById("relation").value == "None") {
-          window.alert("Choose a relation");
-          return 0;
-        }
-        else if (document.getElementById("name").value.length < 1) {
-          window.alert("Enter a name");
-          return 0;
-        }
-        else if (document.getElementById("message").value.length < 1) {
-          window.alert("Enter a message");
-          return 0;
-        }
-        else {
-        heading += document.getElementById("relation").value;
-        window.alert(heading);
-        var name1 = document.getElementById("name").value;
-        window.alert(name1);
-        var message1 = document.getElementById("message").value;
-
-        document.getElementById("page1").style.display="none"; //hide
-        document.getElementById("page2").style.display=""; //show
-        document.body.style.backgroundColor="red";
-        document.getElementById("img1").style.display="";
-        document.getElementById("img2").style.display="";
-
-
-        document.getElementById("mhead_l").innerHTML = heading;
-        document.getElementById("message_l").innerHTML = message1;
-        }
-      }
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="BirthdayCard.css" type="text/css" rel="stylesheet">
+    <script src="BirthdayCard.js" type="text/javascript"></script>
   </head>
 
   <body onload="hideimg()" id="body1">
@@ -110,14 +28,15 @@
           <input id="name" type="text" name="name" class="text1"><br><br>
           <label id="lmessage">Enter custom message:</label><br>
           <input id="message" type="text" name="message" class="message"><br><br>
-          <button id="submit" type="submit" onclick="makeMyCard()"class="makecard">Make Card</button><br>
+          <button id="submit" type="submit" onclick="makeMyCard()" class="makecard">Make Card</button><br>
         </h4>
       </div>
       <div id="page2" class="div2">
-        <br><br><hb><label id="mhead_l" class="hb"> </label></hb><br><br><br>
-        <h5><label id="message_l"> </label></h5><br><br><br>
-        <img id="img1" src="heart_balloons.gif" alt="Balloons" width="400" height="300" align="left">
-        <img id="img2" src="Birthday1.gif-c200" alt="Birthday" width="400" height="300" align="right">
+        <h3><label id="mhead_l" class="hb"> </label></h3>
+        <h5><label id="message_n"> </label></h5>
+        <h6><label id="message_l"> </label></h6>
+        <img id="img1" class="img1" src="heart_balloons.gif" alt="Balloons" width="300" height="200">
+        <!--<img id="img2" src="Birthday1.gif-c200" alt="Birthday" width="400" height="300" align="right">-->
       </div>
   </body>
 </html>
