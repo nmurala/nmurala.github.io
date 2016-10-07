@@ -1,0 +1,83 @@
+
+body{
+	background-image: url('checkers.jpg');
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+h1{
+    color:mediumslateblue;
+		font-size: 35px;
+		text-align: center;
+}
+h6{
+	color: ivory;
+	font-size: 10px;
+	text-align: center;
+}
+
+#checker-green
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 50px;
+	width: 50px;
+	background-color: LightGreen;
+	border-radius: 15px;
+}
+
+#king-green
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 50px;
+	width: 50px;
+	background-color: Green;
+	border-radius: 15px;
+}
+
+#checker-red
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 50px;
+	width: 50px;
+	background-color: Tomato;
+	border-radius: 15px;
+}
+
+#king-red
+{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 50px;
+	width: 50px;
+	background-color: #ff2600;
+	border-radius: 15px;
+}
+table.grid
+{
+	background-color: Navy;
+	margin-left:auto;
+	margin-right:auto;
+}
+td
+{
+	height: 50px;
+	width: 50px;
+	border-radius: 6px;
+}
+
+td.lightcell
+{
+	background-color: PowderBlue;
+}
+
+td.darkcell
+{
+	background-color: RoyalBlue;
+}
